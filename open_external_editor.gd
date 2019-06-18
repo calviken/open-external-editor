@@ -99,7 +99,7 @@ func get_text_edit():
             if godot_version["minor"] == 0:
                 return editor.get_child(1)
             else:
-                return editor.get_child(0).get_child(1)
+                return editor.get_child(0).get_child(0)
         i += 1
 
 func parse_exec_flags(flags):
